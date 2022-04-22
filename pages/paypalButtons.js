@@ -4,7 +4,7 @@ import { useState } from 'react'
 import ButtonPayPal from '../components/buttonsPayPal'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function PaypalButtons() {
   const [checkout, setCheckout] = useState(true);
   return (
     <div className={styles.container}>
@@ -19,9 +19,9 @@ export default function Home() {
           Welcome to <a href="/paypalButtons">PayPal Test!</a>
         </h1>
         <h1 className={styles.title}>
-          Welcome to <a href="/braintreeTest">BrainTree Test!</a>
+          Go <a href="/">Home!</a>
         </h1>
-        {/* <ButtonPayPal /> */}
+        <ButtonPayPal />
         
       </main>
 

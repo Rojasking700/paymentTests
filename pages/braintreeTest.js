@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
+import BraintreeDropIn from '../components/braintreeButton'
 import ButtonPayPal from '../components/buttonsPayPal'
 import styles from '../styles/Home.module.css'
+import {Col, Container, Input, Row, Button} from "reactstrap";
 
-export default function Home() {
+export default function BrainTreeTests() {
   const [checkout, setCheckout] = useState(true);
   return (
     <div className={styles.container}>
@@ -16,12 +18,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="/paypalButtons">PayPal Test!</a>
+          Welcome to <a href="/braintreeTest">braintree Test!</a>
         </h1>
         <h1 className={styles.title}>
-          Welcome to <a href="/braintreeTest">BrainTree Test!</a>
+          Go <a href="/">Home!</a>
         </h1>
-        {/* <ButtonPayPal /> */}
+
+        <BraintreeDropIn />
+        
         
       </main>
 
